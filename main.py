@@ -79,7 +79,7 @@ def choice_char_class() -> str:
     return char_class
 
 
-def main() -> str:
+def main() -> None:
     print('Приветствую тебя, искатель приключений!')
     print('Прежде чем начать игру...')
     char_name: str = input('...назови себя: ')
