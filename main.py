@@ -2,7 +2,16 @@ from random import randint
 
 
 def attack(char_name: str, char_class: str) -> str:
-    """Вычисляем какой урон нанес противнику."""
+    """
+    Функция расчитывает урон персонажа в зависимости от его класса.
+
+    :param char_name: имя персонажа
+    :param char_class: класс персонажа (warrior | mage | healer)
+
+    :return: строка в формате: 'имя персонажа' нанёс урон противнику равный
+    'рандомный урон в зависимости от класса перснонажа'
+    """
+
     if char_class == 'warrior':
         return (f'{char_name} нанёс урон противнику равный '
                 f'{5 + randint(3, 5)}')
